@@ -6,7 +6,6 @@ export const Hero = () => {
 
     const textLines = [
         "Étudiante en Maîtrise",
-        "Passionnée par l'innovation",
         "En recherche d'un stage"
     ];
 

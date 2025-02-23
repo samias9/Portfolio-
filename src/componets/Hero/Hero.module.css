@@ -238,15 +238,21 @@
   @media screen and (max-width: 830px) {
     .container {
       flex-direction: column-reverse;
+      text-align: center;
+      margin-left: 0;
     }
 
     .content {
       align-items: center;
+      justify-items: center;
 
     }
+
     .heroImg {
       width: 100%;
+      margin: 0 auto;
     }
+
     .tooltipContainer {
       align-items: center;
       justify-content: center;
