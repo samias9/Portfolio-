@@ -144,7 +144,6 @@
 .heroImg {
     width: 90%;
     z-index: 1;
-
     animation-name: floating;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -223,7 +222,7 @@
 
   .bottomBlur {
     position: absolute;
-    width: 40vw;
+    width: 20vw;
     height: 40vw;
     min-width: 350px;
     min-width: 250px;
@@ -247,5 +246,9 @@
     }
     .heroImg {
       width: 100%;
+    }
+    .tooltipContainer {
+      align-items: center;
+      justify-content: center;
     }
   }
