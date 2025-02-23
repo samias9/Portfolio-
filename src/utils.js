@@ -5,7 +5,7 @@ export const getImageUrl = (path) => {
   }
   try {
       // Directly use `/assets/` as the base for all image paths.
-      const resolvedUrl = new URL(`/assets/${path}`, window.location.origin).href;
+      const resolvedUrl = new URL(`/images/${path}`, window.location.origin).href;
       console.log("Resolved Image URL:", resolvedUrl);
       return resolvedUrl;
   } catch (error) {
