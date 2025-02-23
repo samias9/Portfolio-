@@ -1,0 +1,186 @@
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 170px auto 0;
+  padding: 0 20px;
+  gap: 40px;
+
+}
+
+
+.skillDescription em {
+  color: #76b5c5;
+  font-weight: bold;
+}
+
+/* Card Styles */
+.cardBenevolat {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  perspective: 1000px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cardBenevolat:hover .cardInner {
+  transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.cardFront {
+  background: linear-gradient(180deg, #576cbc 0%, #132a53);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 15px;
+  color: var(--color-text);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardBack {
+  /* Lighter navy background for contrast */
+  background: linear-gradient(135deg, #152C52, #1B375F);
+  transform: rotateY(180deg);
+  overflow: auto;
+}
+
+.cardContent {
+  padding: 50px;
+}
+
+.benevolatTitle {
+  font-size: 19px;
+  letter-spacing: 1.75px;
+  font-weight: 700;
+  color: var(--color-text);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding-top: 10px;
+}
+
+.benevolatDescription {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 24px;
+  opacity: 0.9;
+  max-width: 800px;
+}
+
+.benevolatList {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+}
+
+.benevolatList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.starIcon {
+  color: #A5C5FF; /* Light blue accent color */
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* Optional hover effect for list items */
+.benevolatList li:hover {
+  opacity: 1;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+/* Skills Section */
+.skillsContainer {
+    flex: 1;
+    max-width: 500px;
+}
+
+.skillItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skillItem:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.skillIcon {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.skillContent {
+    flex: 1;
+
+}
+
+.skillTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.skillDescription {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardBenevolat,
+    .skillsContainer {
+      flex: 1 1 auto;
+    }
+}

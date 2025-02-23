@@ -1,0 +1,138 @@
+@import "../../vars.css";
+/*
+.container {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 15px;
+  padding: 73px;
+  margin-top: 129px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}*/
+/* About Section */
+.container {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 25, 66, 0.6),
+    rgba(12, 12, 12, 0.6)
+  );
+  border-radius: 15px;
+  padding: 73px;
+  margin-top: 129px;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25), 0px 6px 6px rgba(0, 0, 0, 0.22);
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 180px;
+}
+
+.aboutImage {
+  padding-left: 30px;
+  width: 25%;
+  filter: invert(100%);
+}
+
+.aboutItems {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.icon:hover {
+  box-shadow: rgba(255, 255, 255, 0.9) 0px 30px 30px -5px,
+              rgba(255, 255, 255, 0.6) 0px 60px 30px -40px;
+  transform: scale(1.1); /* Légère augmentation de taille */
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+
+.aboutItem:hover {
+  background-size: 100% 100%;
+  box-shadow: rgba(255, 255, 255, 0.9) 0px 30px 30px -5px,
+              rgba(255, 255, 255, 0.6) 0px 60px 30px -40px;
+  transform: scale(1.1);
+}
+
+.aboutItem h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.aboutItem p {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.aboutItem span {
+  font-size: 15px;
+  font-weight: 100;
+  padding-left: 2px;
+}
+
+.educationItem {
+  display: flex;
+  align-items:center;
+  gap: 20px;
+}
+
+.educationItem p {
+  font-style: italic;
+  font-family: var(--font-roboto);
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+
+  .aboutItems {
+    margin-top: 29px;
+  }
+
+  .aboutItem {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

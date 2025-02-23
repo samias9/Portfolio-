@@ -1,0 +1,251 @@
+.container {
+    color: var(--color-text);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.title {
+    font-size: 55px;
+    font-weight: 900;
+    margin-bottom: 33px;
+    font-family: var(--font-shootingStars);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 70%,
+      rgba(255, 255, 255, 0) 120%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+.name {
+  display: inline-block;
+
+  transition: transform 0.3s ease;
+}
+
+.name:hover {
+  transform: translateY(-5px);
+}
+
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+  }
+
+.description {
+    font-size: 30px;
+    font-family: var(--font-roboto);
+    margin-bottom: 52px;
+}
+
+.typingEffect {
+  white-space: pre-wrap; /* Permet le passage à la ligne */
+  font-size: 30px;
+  font-family: var(--font-roboto);
+  line-height: 1.5;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  animation: blink-cursor 0.75s step-end infinite;
+}
+
+.cursorHidden {
+  display: inline-block;
+  width: 8px;
+  visibility: hidden;
+}
+
+@keyframes blink-cursor {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.cta {
+  font-family: var(--font-roboto);
+  position: relative;
+  padding: 19px 25px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  justify-content: center;
+
+}
+
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 80px;
+  height: 80px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+  stroke: #b1dae7;
+  width: 29px;
+  height: 15px;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+  stroke: #033342;
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+.heroImg {
+    width: 90%;
+    z-index: 1;
+
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  .tooltip-container {
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bold;
+    color: #1e293b;
+    z-index: 10;
+  }
+
+  .tooltip-text {
+    position: absolute;
+    left: 45%;
+    bottom: 80%;
+    transform: translateX(-50%) translateY(20px);
+    background-color: #1e293b;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 200px;
+    width: max-content;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  .tooltip-container:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .tooltip-text p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .tooltip-text .salute {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+@keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+}
+
+.topBlur {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    min-width: 350px;
+    min-width: 350px;
+    top: -128px;
+    left: -10vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+  }
+
+  .bottomBlur {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    min-width: 350px;
+    min-width: 250px;
+    top: 246px;
+    right: 3vw;
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+  }
+
+
+  @media screen and (max-width: 830px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+
+    .content {
+      align-items: center;
+
+    }
+    .heroImg {
+      width: 100%;
+    }
+  }

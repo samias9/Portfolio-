@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Motley Forces';
+    src: url('assets/fonts/shooting-star-personal-use.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* colours */
+    --color-text: #fff;
+    --color-text-dark: #000;
+    --color-primary: #576cbc;
+    --color-secondary: #19376d;
+    --color-dark:var(--color-bg);
+
+    --color-dark: #0b2447;
+    --color-bg: #04152d;
+    --color-bg2: #FDF9EC;
+    --color-bg3: rgb(243, 211, 188);
+    --color-bg4: rgb(244, 210, 188);
+    --color-bg5: rgb(134, 188, 147);
+    /* Fonts */
+    --font-robot: "Roboto";
+    --font-shootingStars: 'Motley Forces', cursive;
+
+}

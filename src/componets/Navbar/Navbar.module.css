@@ -1,0 +1,142 @@
+@import "../../vars.css";
+
+@keyframes smoke {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-10px) scale(2);
+    opacity: 0;
+  }
+}
+
+.star {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: white;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 61px;
+  z-index: 2;
+  margin: 0 10%;
+
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.menuBtn {
+  display: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItems {
+  display: flex;
+  gap: 47px;
+  list-style: none;
+}
+
+.menuItems a {
+  font-size: 25px;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+.menu {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+}
+
+.menuBtn {
+    display: block;
+    cursor: pointer;
+}
+
+  .menuItems {
+    display: none; /* Le menu est caché par défaut */
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    background: rgb(25, 55, 109);
+    background: linear-gradient(
+      0deg,
+      rgb(189, 205, 160) 10%,
+      rgb(65, 82, 66) 90%
+    );
+    padding: 24px 33px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .menuOpen {
+    display: flex; /* Le menu devient visible lorsqu'il a la classe menuOpen */
+    z-index: 1;
+
+  }
+  .contactDropdown:hover .dropdownContent {
+    display: block;
+    margin-top: 20px;
+    left: -170px;
+    top: -150%;
+    z-index: 10;
+    border-radius: 18px;
+  }
+
+  .contactDropdown:hover .dropdownContent::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+    top: -20px;
+    left: 0;
+    animation: smoke 2s ease-out infinite;
+    pointer-events: none;
+  }
+
+  .contactDropdown:hover .dropdownContent::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%);
+    top: -15px;
+    left: 5px;
+    animation: smoke 2.5s ease-out infinite 0.5s;
+    pointer-events: none;
+  }
+
+}
