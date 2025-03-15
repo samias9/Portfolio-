@@ -45,7 +45,7 @@ export const Hero = () => {
         <nav className={styles.container}>
             <div className={styles.content}>
                 <h1 className={styles.title}>
-                    Hi, <span className={`${styles.name} ${styles.title}`}>I'm Samia</span>
+                    <span className={`${styles.name} ${styles.title}`}>Samia CARCHAF</span>
                 </h1>
                 <p className={`${styles.description} ${styles.typingEffect}`}>
                     {displayText}
@@ -57,6 +57,10 @@ export const Hero = () => {
                         <path d="M1,5 L11,5"></path>
                         <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
+                </a>
+                <a href="/Files/cv_Samia-CARCHAF.pdf" download="Samia_Carchaf_CV.pdf" className={styles.cv}>
+                    <span>Télécharger CV</span>
+                    <img src={getImageUrl("hero/downloads.png")} alt="Download" />
                 </a>
             </div>
             <div className={styles.tooltipContainer}>

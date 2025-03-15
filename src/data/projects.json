@@ -4,14 +4,14 @@
     "imageSrc": "projects/project.png",
     "description": "Plateforme intelligente proposant des recommandations de lecture personnalisées.",
     "skills": ["React", "API OpenAI", "MongoDB"],
-    "source": "https://github.com/Cecco22/Projet-IA"
+    "source": "https://github.com/samias9/SmartBookRec"
   },
   {
     "title": "Chatbot",
     "imageSrc": "projects/project.png",
     "description": "Assistant basé sur la technique RAG,pour le manuel de gestion de l’UQAC.",
     "skills": ["Python", "LangChain", "GPT4All", "Streamlit"],
-    "source": "https://github.com/Cecco22/Longchain"
+    "source": "https://github.com/samias9/Uqac-Chatbot"
   },
   {
     "title": "Apprentissage du LAS",
@@ -19,5 +19,19 @@
     "description": "Outil interactif d’apprentissage de l’alphabet en langue des signes américaine.",
     "skills": ["Python", "Deep Learning"],
     "source": "https://github.com/Hel88/SignLanguageAlphabetRecognition"
+  },
+  {
+    "title": "Portfolio",
+    "imageSrc": "projects/project.png",
+    "description": "Ce portfolio présente une sélection de mes projets en développement web et en IA.",
+    "skills": ["React", "HTML", "CSS"],
+    "source": "https://github.com/samias9/Portfolio-"
+  },
+  {
+    "title": "\"Restaurant Finder\"",
+    "imageSrc": "projects/project.png",
+    "description": "Une plateforme de recherche et découverte de meilleurs restaurants.",
+    "skills": ["Angular","HTML", "CSS"],
+    "source": "https://github.com/samias9/Restaurant-Finder"
   }
 ]
