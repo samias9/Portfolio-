@@ -1,0 +1,62 @@
+{
+     "navbar": {
+      "about": "À propos",
+      "experience": "Expériences",
+      "skills": "Compétences",
+      "projects": "Projets",
+      "contact": "Contact"
+    },
+    "about": {
+    "title": "Formations",
+    "uqac": {
+      "school": "Université du Quebec à Chicoutimi",
+      "date": "2024-2025",
+      "program": "Maîtrise en Informatique cheminement Intelligence Artificielle"
+    },
+    "polytech": {
+      "school": "Polytech Tours",
+      "date": "2020-2025",
+      "program": "Formation Ingénieur en Informatique"
+    }
+  },
+  "hero": {
+  "line1": "Étudiante en Maîtrise",
+  "line2": "En recherche d'un stage",
+  "contact": "Contactez-moi",
+  "download": "Télécharger CV",
+  "greeting": "Bonjour!",
+  "intro": "Actuellement à la recherche d'un stage pour appliquer mes compétences et contribuer à des projets significatifs."
+  },
+  "competence": {
+      "volunteer": {
+        "title": "Bénévolat",
+        "school": "École élémentaire Henri Wallon",
+        "description": "En tant que bénévole, j'ai eu l'opportunité de donner des cours d'introduction à la robotique aux élèves de primaire, ce qui m'a permis de :",
+        "achievements": [
+          "Enrichir mes connaissances scientifiques en les utilisant autrement.",
+          "Apprendre à s'adapter aux questions et aux propos des enfants.",
+          "Découvrir le monde de l'enseignement.",
+          "Donner une image plus réelle et plus accessible du métier d'ingénieur."
+        ]
+      },
+      "skills": {
+        "language": {
+          "title": "Compétences Linguistiques",
+          "description": [
+            "Français: Maîtrise native",
+            "Anglais: C1 - TOEIC 890",
+            "Arabe: Langue maternelle"
+          ]
+        },
+        "technical": {
+          "title": "Compétences Techniques",
+          "description": [
+            "Développement Web: React, Node.js, Angular",
+            "Programmation: Java, Kotlin, Python, C++, JavaScript, SQL",
+            "Data Science & IA: Pandas, NumPy, TensorFlow, OpenAI API",
+            "Outils: Git, Docker, Google Cloud, VS Code, IntelliJ, AndroidStudio"
+          ]
+        }
+      }
+    }
+}

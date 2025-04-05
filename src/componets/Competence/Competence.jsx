@@ -4,45 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLanguage, faComputerMouse, faStar } from '@fortawesome/free-solid-svg-icons';
 import { gsap } from "gsap";
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 export const Competence = () => {
-    const volunteerExperience = {
-        title: "Bénévolat",
-        school: "École élémentaire Henri Wallon",
-        description: "En tant que bénévole, j'ai eu l'opportunité de donner des cours d'introduction à la robotique aux élèves de primaire, ce qui m'a permis de :",
-        achievements: [
-            "Enrichir mes connaissances scientifiques en les utilisant autrement.",
-            "Apprendre à s'adapter aux questions et aux propos des enfants.",
-            "Découvrir le monde de l'enseignement.",
-            "Donner une image plus réelle et plus accessible du métier d'ingénieur."
-        ]
-    };
-
-    const skills = [
-        {
-            icon: faLanguage,
-            title: "Compétences Linguistiques",
-            description: (
-                <>
-                <em>Français</em> : Maîtrise native <br />
-                <em>Anglais</em> : C1 - TOEIC 890 <br />
-                <em>Arabe</em> : Langue maternelle
-            </>
-            )
-        },
-        {
-            icon: faComputerMouse,
-            title: "Compétences Techniques",
-            description: (
-                <>
-                    <em>Développement Web</em> : React, Node.js, Angular <br />
-                    <em>Programmation</em> : Java, Kotlin, Python, C++, JavaScript, SQL <br />
-                    <em>Data Science & IA</em> : Pandas, NumPy, TensorFlow, OpenAI API <br />
-                    <em>Outils</em> : Git, Docker, Google Cloud, VS Code, IntelliJ, AndroidStudio
-                </>
-            )
-        }
-    ];
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         const textElements = document.querySelectorAll(".animate-text");
@@ -57,6 +22,46 @@ export const Competence = () => {
             });
         });
     }, []);
+
+    // Get volunteer experience data from translations
+    const volunteerExperience = {
+        title: t('competence.volunteer.title'),
+        school: t('competence.volunteer.school'),
+        description: t('competence.volunteer.description'),
+        achievements: [
+            t('competence.volunteer.achievements.0'),
+            t('competence.volunteer.achievements.1'),
+            t('competence.volunteer.achievements.2'),
+            t('competence.volunteer.achievements.3')
+        ]
+    };
+
+    // Get skills data from translations
+    const skills = [
+        {
+            icon: faLanguage,
+            title: t('competence.skills.language.title'),
+            description: (
+                <>
+                <em>{t('competence.skills.language.description.0')}</em> <br />
+                <em>{t('competence.skills.language.description.1')}</em> <br />
+                <em>{t('competence.skills.language.description.2')}</em>
+                </>
+            )
+        },
+        {
+            icon: faComputerMouse,
+            title: t('competence.skills.technical.title'),
+            description: (
+                <>
+                <em>{t('competence.skills.technical.description.0')}</em> <br />
+                <em>{t('competence.skills.technical.description.1')}</em> <br />
+                <em>{t('competence.skills.technical.description.2')}</em> <br />
+                <em>{t('competence.skills.technical.description.3')}</em>
+                </>
+            )
+        }
+    ];
 
     return (
         <section className={styles.wrapper} id="competences">
@@ -111,7 +116,6 @@ export const Competence = () => {
                         </div>
                     ))}
                 </div>
-
             </div>
         </section>
     );

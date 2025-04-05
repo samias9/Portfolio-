@@ -1,0 +1,62 @@
+{
+    "navbar": {
+      "about": "About",
+      "experience": "Experience",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "about": {
+    "title": "Education",
+    "uqac": {
+      "school": "University of Quebec at Chicoutimi",
+      "date": "2024-2025",
+      "program": "Master's in Computer Science – Artificial Intelligence Track"
+    },
+    "polytech": {
+      "school": "Polytech Tours",
+      "date": "2020-2025",
+      "program": "Engineering Degree in Computer Science"
+    }
+    },
+    "hero": {
+    "line1": "Master's Student",
+    "line2": "Seeking an Internship",
+    "contact": "Contact Me",
+    "download": "Download CV",
+    "greeting": "Hello!",
+    "intro": "Currently looking for an internship to apply my skills and contribute to meaningful projects."
+  },
+  "competence": {
+      "volunteer": {
+        "title": "Volunteer Work",
+        "school": "Henri Wallon Elementary School",
+        "description": "As a volunteer, I had the opportunity to teach introductory robotics to elementary school students, which allowed me to:",
+        "achievements": [
+          "Enrich my scientific knowledge by using it in a different way.",
+          "Learn to adapt to children's questions and comments.",
+          "Discover the world of teaching.",
+          "Give a more realistic and accessible image of the engineering profession."
+        ]
+      },
+      "skills": {
+        "language": {
+          "title": "Language Skills",
+          "description": [
+            "French: Native proficiency",
+            "English: C1 - TOEIC 890",
+            "Arabic: Native language"
+          ]
+        },
+        "technical": {
+          "title": "Technical Skills",
+          "description": [
+            "Web Development: React, Node.js, Angular",
+            "Programming: Java, Kotlin, Python, C++, JavaScript, SQL",
+            "Data Science & AI: Pandas, NumPy, TensorFlow, OpenAI API",
+            "Tools: Git, Docker, Google Cloud, VS Code, IntelliJ, AndroidStudio"
+          ]
+        }
+      }
+    }
+}
