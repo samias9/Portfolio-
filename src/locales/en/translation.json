@@ -69,7 +69,7 @@
         },
         "chatbot": {
           "title": "Chatbot",
-          "description": "RAG-based assistant for UQAC's management manual."
+          "description": "A chatbot website featuring a RAG-based assistant for UQAC's management manual."
         },
         "aslLearning": {
           "title": "ASL Learning",
@@ -81,7 +81,7 @@
         },
         "restaurantFinder": {
           "title": "\"Restaurant Finder\"",
-          "description": "A platform for searching and discovering the best restaurants."
+          "description": "A user-friendly platform for exploring and finding top-rated restaurants."
         }
       }
     }
