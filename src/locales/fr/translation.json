@@ -57,6 +57,65 @@
             "Outils: Git, Docker, Google Cloud, VS Code, IntelliJ, AndroidStudio"
           ]
         }
+      },
+      "projects": {
+      "imageAlt": "Image du projet",
+      "sourceLink": "Source",
+      "demoLink": "Démo",
+      "items": {
+        "bookRecommendations": {
+          "title": "Suggestion de livres",
+          "description": "Plateforme intelligente proposant des recommandations de lecture personnalisées."
+        },
+        "chatbot": {
+          "title": "Chatbot",
+          "description": "Assistant basé sur la technique RAG, pour le manuel de gestion de l'UQAC."
+        },
+        "aslLearning": {
+          "title": "Apprentissage du LAS",
+          "description": "Outil interactif d'apprentissage de l'alphabet en langue des signes américaine."
+        },
+        "portfolio": {
+          "title": "Portfolio",
+          "description": "Ce portfolio présente une sélection de mes projets en développement web et en IA."
+        },
+        "restaurantFinder": {
+          "title": "\"Restaurant Finder\"",
+          "description": "Une plateforme de recherche et découverte de meilleurs restaurants."
+        }
       }
     }
+    },
+    "experience": {
+  "title": "Expériences",
+  "arsene": {
+    "title": "Stagiaire Développement Web",
+    "place": "Bordeaux, France",
+    "desc": "Stage chez Arsène:",
+    "task1": "Développer une application en Vue.js destinée aux amateur.ice.s de footballfootball.",
+    "task2": "Définir les tâches à accomplir et coordonner leur exécution avec l'équipe.",
+    "task3": "Gérer et alimenter une base de données pour assurer la fiabilité et l'optimisation des données.",
+    "task4": "Publier l'application sur le Play Store et l'App Store."
+  },
+  "ronsard1": {
+    "title": "Intervenante",
+    "place": "Tours, France",
+    "desc": "CDD - Collège Pierre de Ronsard",
+    "task1": "Collaborer au sein d’une équipe éducative.",
+    "task2": "Communiquer, organiser et planifier.",
+    "task3": "Gérer le temps et la classe."
+  },
+  "ronsard2": {
+    "title": "Stagiaire Conception 3D",
+    "place": "Tours, France",
+    "desc": "Stage chez ClemConcept:",
+    "task1": "Conception d'un piège à frelon réalisé à l'aide du logiciel CATIA V5.",
+    "task2": "Impression 3D."
+  }
+},
+  "contact": {
+    "title": "Contact",
+    "description": "N'hésitez pas à me contacter!"
+  }
+
 }

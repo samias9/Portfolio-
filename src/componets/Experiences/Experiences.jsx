@@ -1,55 +1,42 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import styles from "./Experiences.module.css";
-import { getImageUrl } from "../../utils";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVuejs, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { faCheck, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 export const Experience = () => {
+    const { t } = useTranslation();
+
     return (
         <section className={styles.wrapper} id="experience">
-             <span className={styles.sideText}>Experiences</span>
+            <span className={styles.sideText}>{t('experience.title')}</span>
 
             <div className={styles.container}>
-                {/*<h2 className={styles.title}>Experiences</h2>*/}
                 <div className={styles.parent}>
+                    {/* 1st Card */}
                     <div className={styles.card}>
                         <div className={styles.glass}></div>
-
                         <div className={styles.content}>
-                            <span className={styles.title}>Stagiaire Développement Web</span>
+                            <span className={styles.title}>{t('experience.arsene.title')}</span>
                             <span className={styles.place}>
-                                <FontAwesomeIcon icon={faLocationDot} size="1x" color="#0077b5" /> Bordeaux, France
+                                <FontAwesomeIcon icon={faLocationDot} size="1x" color="#0077b5" /> {t('experience.arsene.place')}
                             </span>
                             <span className={styles.text}>
-                                <span style={{ display: 'block', marginBottom: '10px' }}>Stage chez <strong>Arsène</strong>:</span>
+                                <span style={{ display: 'block', marginBottom: '10px' }}>{t('experience.arsene.desc')}</span>
                                 <ul>
-                                    <li>
-                                        <FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>
-                                        Développer une application en Vue.js destinée aux amateur.ice.s de football.
-                                    </li>
-                                    <li>
-                                        <FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>
-                                        Définir les tâches à accomplir et coordonner leur exécution avec l'équipe.
-                                    </li>
-                                    <li>
-                                        <FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>
-                                        Gérer et alimenter une base de données pour assurer la fiabilité et
-                                        l'optimisation des données.
-                                    </li>
-                                    <li>
-                                        <FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>
-                                        Publier l'application sur le Play Store et l'App Store.
-                                    </li>
+                                    <li><FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>{t('experience.arsene.task1')}</li>
+                                    <li><FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>{t('experience.arsene.task2')}</li>
+                                    <li><FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>{t('experience.arsene.task3')}</li>
+                                    <li><FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>{t('experience.arsene.task4')}</li>
                                 </ul>
                             </span>
                         </div>
-
                         <div className={styles.bottom}>
                             <div className={styles.socials}>
-                                <FontAwesomeIcon icon={faVuejs} color="#0077b5" size="2x" style={{ marginRight: '10px' }}></FontAwesomeIcon>
+                                <FontAwesomeIcon icon={faVuejs} color="#0077b5" size="2x" style={{ marginRight: '10px' }} />
                                 <svg style={{ marginRight: '10px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32" fill="#0077b5">
                                     <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM127 384.5c-5.5 9.6-17.8 12.8-27.3 7.3-9.6-5.5-12.8-17.8-7.3-27.3l14.3-24.7c16.1-4.9 29.3-1.1 39.6 11.4L127 384.5zm138.9-53.9H84c-11 0-20-9-20-20s9-20 20-20h51l65.4-113.2-20.5-35.4c-5.5-9.6-2.2-21.8 7.3-27.3 9.6-5.5 21.8-2.2 27.3 7.3l8.9 15.4 8.9-15.4c5.5-9.6 17.8-12.8 27.3-7.3 9.6 5.5 12.8 17.8 7.3 27.3l-85.8 148.6h62.1c20.2 0 31.5 23.7 22.7 40zm98.1 0h-29l19.6 33.9c5.5 9.6 2.2 21.8-7.3 27.3-9.6 5.5-21.8 2.2-27.3-7.3-32.9-56.9-57.5-99.7-74-128.1-16.7-29-4.8-58 7.1-67.8 13.1 22.7 32.7 56.7 58.9 102h52c11 0 20 9 20 20 0 11.1-9 20-20 20z" />
                                 </svg>
@@ -67,79 +54,46 @@ export const Experience = () => {
                         </div>
                     </div>
 
+                    {/* 2nd Card */}
                     <div className={styles.card}>
                         <div className={styles.glass}></div>
-
                         <div className={styles.content}>
-                            <span className={styles.title}>Intervenante</span>
+                            <span className={styles.title}>{t('experience.ronsard1.title')}</span>
                             <span className={styles.place}>
-                                <FontAwesomeIcon icon={faLocationDot} size="1x" color="#0077b5" /> Tours, France
+                                <FontAwesomeIcon icon={faLocationDot} size="1x" color="#0077b5" /> {t('experience.ronsard1.place')}
                             </span>
                             <span className={styles.text}>
-                                <span style={{ display: 'block', marginBottom: '10px' }}> CDD - <strong>Collège Pierre de Ronsard </strong></span>
+                                <span style={{ display: 'block', marginBottom: '10px' }}>{t('experience.ronsard1.desc')}</span>
                                 <ul>
-                                    <li>
-                                        <FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>
-                                        Collaborer au sein d’une équipe éducative.
-                                    </li>
-                                    <li>
-                                        <FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>
-                                        Communiquer, organiser et planifier.
-                                    </li>
-                                    <li>
-                                        <FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>
-                                        Gérer le temps et la classe.
-                                    </li>
-
+                                    <li><FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>{t('experience.ronsard1.task1')}</li>
+                                    <li><FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>{t('experience.ronsard1.task2')}</li>
+                                    <li><FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>{t('experience.ronsard1.task3')}</li>
                                 </ul>
                             </span>
                         </div>
 
-                        <div className={styles.bottom}>
-                            <div className={styles.socials}>
-                                <FontAwesomeIcon icon={faLinkedin} size="2x" color="#0077b5" />
-                                <FontAwesomeIcon icon={faSquareGithub} size="2x" color="#0077b5"/>
-                            </div>
-                        </div>
                     </div>
 
+                    {/* 3rd Card */}
                     <div className={styles.card}>
                         <div className={styles.glass}></div>
-
                         <div className={styles.content}>
-                            <span className={styles.title}>Stagiaire Conception 3D </span>
+                            <span className={styles.title}>{t('experience.ronsard2.title')}</span>
                             <span className={styles.place}>
-                                <FontAwesomeIcon icon={faLocationDot} size="1x" color="#0077b5" /> Tours, France
+                                <FontAwesomeIcon icon={faLocationDot} size="1x" color="#0077b5" /> {t('experience.ronsard2.place')}
                             </span>
                             <span className={styles.text}>
-                                <span style={{ display: 'block', marginBottom: '10px' }}> CDD - <strong>Collège Pierre de Ronsard </strong></span>
+                                <span style={{ display: 'block', marginBottom: '10px' }}>{t('experience.ronsard2.desc')}</span>
                                 <ul>
-                                    <li>
-                                        <FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>
-                                        Conception  d'un piège à frelon réalisé à l'aide du logiciel CATIA V5.
-                                    </li>
-                                    <li>
-                                        <FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>
-                                        Impression 3D.
-                                    </li>
-
+                                    <li><FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>{t('experience.ronsard2.task1')}</li>
+                                    <li><FontAwesomeIcon icon={faCheck} color="green" style={{ marginRight: '10px' }}/>{t('experience.ronsard2.task2')}</li>
                                 </ul>
                             </span>
                         </div>
 
-                        <div className={styles.bottom}>
-                            <div className={styles.socials}>
-                                <FontAwesomeIcon icon={faLinkedin} size="2x" color="#0077b5" />
-                                <FontAwesomeIcon icon={faSquareGithub} size="2x" color="#0077b5"/>
-                            </div>
-                        </div>
                     </div>
-
-
                 </div>
-
             </div>
-
         </section>
     );
 };

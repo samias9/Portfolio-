@@ -1,36 +1,36 @@
 [
   {
-    "title": "Suggestion de livres",
+    "titleKey": "bookRecommendations",
     "imageSrc": "projects/project.png",
-    "description": "Plateforme intelligente proposant des recommandations de lecture personnalisées.",
+    "descriptionKey": "bookRecommendations",
     "skills": ["React", "API OpenAI", "MongoDB"],
     "source": "https://github.com/samias9/SmartBookRec"
   },
   {
-    "title": "Chatbot",
+    "titleKey": "chatbot",
     "imageSrc": "projects/project.png",
-    "description": "Assistant basé sur la technique RAG,pour le manuel de gestion de l’UQAC.",
+    "descriptionKey": "chatbot",
     "skills": ["Python", "LangChain", "GPT4All", "Streamlit"],
     "source": "https://github.com/samias9/Uqac-Chatbot"
   },
   {
-    "title": "Apprentissage du LAS",
+    "titleKey": "aslLearning",
     "imageSrc": "projects/project.png",
-    "description": "Outil interactif d’apprentissage de l’alphabet en langue des signes américaine.",
+    "descriptionKey": "aslLearning",
     "skills": ["Python", "Deep Learning"],
     "source": "https://github.com/Hel88/SignLanguageAlphabetRecognition"
   },
   {
-    "title": "Portfolio",
+    "titleKey": "portfolio",
     "imageSrc": "projects/project.png",
-    "description": "Ce portfolio présente une sélection de mes projets en développement web et en IA.",
+    "descriptionKey": "portfolio",
     "skills": ["React", "HTML", "CSS"],
     "source": "https://github.com/samias9/Portfolio-"
   },
   {
-    "title": "\"Restaurant Finder\"",
+    "titleKey": "restaurantFinder",
     "imageSrc": "projects/project.png",
-    "description": "Une plateforme de recherche et découverte de meilleurs restaurants.",
+    "descriptionKey": "restaurantFinder",
     "skills": ["Angular","HTML", "CSS"],
     "source": "https://github.com/samias9/Restaurant-Finder"
   }

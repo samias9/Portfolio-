@@ -57,6 +57,64 @@
             "Tools: Git, Docker, Google Cloud, VS Code, IntelliJ, AndroidStudio"
           ]
         }
+      },
+      "projects": {
+      "imageAlt": "Image of the project",
+      "sourceLink": "Source",
+      "demoLink": "Demo",
+      "items": {
+        "bookRecommendations": {
+          "title": "Book Recommendations",
+          "description": "Intelligent platform offering personalized reading recommendations."
+        },
+        "chatbot": {
+          "title": "Chatbot",
+          "description": "RAG-based assistant for UQAC's management manual."
+        },
+        "aslLearning": {
+          "title": "ASL Learning",
+          "description": "Interactive tool for learning the American Sign Language alphabet."
+        },
+        "portfolio": {
+          "title": "Portfolio",
+          "description": "This portfolio showcases a selection of my web development and AI projects."
+        },
+        "restaurantFinder": {
+          "title": "\"Restaurant Finder\"",
+          "description": "A platform for searching and discovering the best restaurants."
+        }
       }
     }
+    },
+    "experience": {
+  "title": "Experiences",
+  "arsene": {
+    "title": "Software Engineer Intern",
+    "place": "Bordeaux, France",
+    "desc": "As a Software Engineer intern at Arsene:",
+    "task1": "Developed a Vue.js application for amateur football enthusiasts.",
+    "task2": "Managed and maintained a database to ensure data reliability and optimization.",
+    "task3": "Published the application on the Play Store and App Store.",
+    "task4": "Defined tasks and coordinated their execution within the team."
+  },
+  "ronsard1": {
+    "title": "Assistant Teacher",
+    "place": "Tours, France",
+    "desc": "Fixed-term contract – Pierre de Ronsard Middle School",
+    "task1": "Collaborated with an educational team.",
+    "task2": "Managed time and classes while communicating, organizing, and planning.",
+    "task3": "Instructing students."
+  },
+  "ronsard2": {
+  "title": "3D Design Intern",
+  "place": "Tours, France",
+  "desc": "Internship at ClemConcept:",
+  "task1": "Designed a hornet trap using CATIA V5 software.",
+  "task2": "3D printing."
+  }
+},
+  "contact": {
+    "title": "Contact Me",
+    "description": "Feel free to reach out for any inquiries or collaboration opportunities."
+  }
 }
