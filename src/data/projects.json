@@ -14,6 +14,13 @@
     "source": "https://github.com/samias9/Uqac-Chatbot"
   },
   {
+    "titleKey": "speedFINDER",
+    "imageSrc": "projects/project.png",
+    "descriptionKey": "speedFINDER",
+    "skills": ["Python", "openCV", "YOLO", "Tkinter"],
+    "source": "https://github.com/samias9/Video-detection"
+  },
+  {
     "titleKey": "aslLearning",
     "imageSrc": "projects/project.png",
     "descriptionKey": "aslLearning",

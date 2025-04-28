@@ -67,6 +67,10 @@
           "title": "Book Recommendations",
           "description": "Intelligent platform offering personalized reading recommendations."
         },
+        "speedFINDER": {
+          "title": "speedFINDER",
+          "description": "Object detection multiplayer game using YOLO architecture for tracking."
+        },
         "chatbot": {
           "title": "Chatbot",
           "description": "A chatbot website featuring a RAG-based assistant for UQAC's management manual."

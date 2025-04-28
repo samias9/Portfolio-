@@ -79,6 +79,10 @@
           "title": "Portfolio",
           "description": "Ce portfolio présente une sélection de mes projets en développement web et en IA."
         },
+        "speedFINDER": {
+          "title": "speedFINDER",
+          "description": "Jeu de détection d'objets."
+        },
         "restaurantFinder": {
           "title": "\"Restaurant Finder\"",
           "description": "Une plateforme de recherche et découverte de meilleurs restaurants."
